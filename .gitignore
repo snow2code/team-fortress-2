@@ -1,24 +1,76 @@
-# Ignore all this
+
+# Ignore Source Engine and Server Junk
 bin/*
 hl2/*
 platform/*
 steamapps/*
 
-tf/addons/*.vdf
+srcds.exe
+srcds_win64.exe
+steam_appid.txt
+thirdpartylegalnotices.txt
 
-tf/addons/metamod/*
+
+# Ignore TF2 junk.
+tf/bin/*
+tf/custom/*
+tf/download/*
+tf/downloadlists/*
+tf/materials/*
+tf/resource/*
+tf/scripts/*
+tf/workshop/*
+tf/logs/*
+
+tf/maps/graphs/*.ain
+tf/maps/*.lst
+tf/maps1/*
+
+tf/*.vpk
+tf/*.cache
+tf/*.txt
+tf/*.inf
+
+# TF2 Config
+tf/cfg/!/*
+tf/cfg/sourcemod/*
+tf/cfg/sourcevr_tf.cfg
+tf/cfg/360controller-linux.cfg
+tf/cfg/config_default.cfg
+tf/cfg/360controller.cfg
+tf/cfg/chapter1.cfg
+tf/cfg/chapter2.cfg
+tf/cfg/chapter3.cfg
+tf/cfg/mtp.cfg
+tf/cfg/replay_example.cfg
+tf/cfg/undo360controller.cfg
+tf/cfg/*.txt
+
+
+
+
+# SourceMod Ignores
 tf/addons/sourcemod/bin/*
 tf/addons/sourcemod/configs/*
+tf/addons/metamod/*
 tf/addons/sourcemod/data/*
 tf/addons/sourcemod/extensions/*
 tf/addons/sourcemod/gamedata/*
 tf/addons/sourcemod/logs/*
-tf/addons/sourcemod/plugins/*
+
+# tf/addons/sourcemod/plugins/*
+tf/addons/sourcemod/plugins/admin-flatfile.smx
+tf/addons/sourcemod/plugins/adminmenu.smx
+tf/addons/sourcemod/plugins/adminhelp.smx
+
 tf/addons/sourcemod/plugins1/*
 
-tf/addons/sourcemod/*.txt
+tf/addons/sourcemod/translations/*
 
-# Plugin
+tf/addons/sourcemod/*.txt
+tf/addons/*.vdf
+
+# Plugin Development
 tf/addons/sourcemod/scripting/include/*.inc
 tf/addons/sourcemod/scripting/admin-flatfile/*
 tf/addons/sourcemod/scripting/adminmenu/*
@@ -29,10 +81,13 @@ tf/addons/sourcemod/scripting/adminmenu.sp
 tf/addons/sourcemod/scripting/*.exe
 tf/addons/sourcemod/scripting/compile.dat
 
-srcds.exe
-srcds_win64.exe
 
-steam_appid.txt
+# Ignore some of my stuff
+tf/logs_snowy/*
 
+# You guys get "server_public.cfg" instead of "server.cfg", cuz of passwords
+tf/cfg/server.cfg
 
-# Now ignore plugin code that aint mine
+# Unignore as needed
+tf/addons/sourcemod/scripting/_snowyvotes.sp
+tf/addons/sourcemod/scripting/snowy_votes/*
